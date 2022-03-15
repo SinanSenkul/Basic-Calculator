@@ -98,7 +98,6 @@ function operator(o){
   numArray.push(document.getElementById('tB').value);
   document.getElementById('tB').value="";
   opFlag=true;
-  console.log(numArray);
   if(numArray[0]!=null && numArray[1]!=null){
     calculate();
   }
@@ -112,7 +111,6 @@ function calculate(){
     numArray[0]=num;
     document.getElementById('tB').value=num;
     calFlag=true;
-    console.log(numArray);
   }
   if(op==='-'){
     num=numArray[0]*1-numArray[1]*1;
@@ -120,7 +118,6 @@ function calculate(){
     numArray[0]=num;
     document.getElementById('tB').value=num;
     calFlag=true;
-    console.log(numArray);
   }
   if(op==='*'){
     num=numArray[0]*1*numArray[1]*1;
@@ -128,7 +125,6 @@ function calculate(){
     numArray[0]=num;
     document.getElementById('tB').value=num;
     calFlag=true;
-    console.log(numArray);
   }
   if(op==='/'){
     num=numArray[0]*1/numArray[1]*1;
@@ -136,7 +132,6 @@ function calculate(){
     numArray[0]=num;
     document.getElementById('tB').value=num;
     calFlag=true;
-    console.log(numArray);
   }
 }
 
